@@ -17,7 +17,7 @@ pipeline{
       }
       stage('Deploy with Ansible') {
             steps {
-                sh 'ansible-playbook -i ansible/hosts.ini deploy.yml'
+                sh 'ansible-playbook -i ansible/hosts.ini ansible/playbook.yml'
             }
       }
   }
